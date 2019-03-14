@@ -1,0 +1,24 @@
+{
+  "name": "express-params-validator",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "repository": "https://github.com/JojiAndela/express-params-validator.git",
+  "author": "JojiAndela <42158522+JojiAndela@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "nyc mocha --require @babel/register --exit",
+    "watch": "nyc mocha --require @babel/register --watch",
+    "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test",
+    "prepublish": "babel ./src --out-dir dist"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/node": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0"
+  }
+}
